@@ -1,0 +1,13 @@
+preset: symfony
+
+enabled:
+    - ordered_use
+    - strict
+
+disabled:
+    - empty_return
+
+    # Puli is using a reserved keyword as a class
+    # (Puli\Repository\Api\Resource\Resource)
+    # https://github.com/puli/issues/issues/119
+    - phpdoc_types
